@@ -1,0 +1,6 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
