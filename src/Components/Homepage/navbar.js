@@ -18,10 +18,11 @@ function NavBar() {
   };
 
   const openPaperSectionInNewTab = () => {
-    window.open("/paper", "_blank");
+    window.open("#/paper", "_blank", "noopener,noreferrer");
   };
+  
   const openBlogSectionInNewTab = () => {
-    window.open("/blog", "_blank");
+    window.open("#/blog", "_blank", "noopener,noreferrer");
   };
 
   return (

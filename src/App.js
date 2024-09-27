@@ -3,8 +3,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import OpenPage from "./Components/OpenPage/home.js";
 import Paper from "./Components/Paper/paper.js";
 import Blog from "./Components/Blog/blog.js";
-import './App.css';
-import './Components/OpenPage/loading.css'; 
+import "./App.css";
+import "./Components/OpenPage/loading.css";
 
 // Loading component
 const Loading = () => {
@@ -22,14 +22,25 @@ const Loading = () => {
 
 // Main App component
 function App() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 3000);
+    // Check if the app has been loaded before
+    const hasLoadedBefore = localStorage.getItem("hasLoadedBefore");
 
-    return () => clearTimeout(timer);
+    if (!hasLoadedBefore) {
+      // If this is the first time, show the loading screen
+      setLoading(true);
+
+      // Set a timeout to hide the loading screen after 3 seconds
+      const timer = setTimeout(() => {
+        setLoading(false);
+        // Set a flag in localStorage to indicate the app has loaded
+        localStorage.setItem("hasLoadedBefore", "true");
+      }, 3000);
+
+      return () => clearTimeout(timer); // Cleanup the timer
+    }
   }, []);
 
   return (
