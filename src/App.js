@@ -24,7 +24,10 @@ function App() {
   }, []);
 
   if (loading) {
+    console.log("Loading is true, showing spinner"); // Debugging
     return <Loading />;
+  } else {
+    console.log("Loading is false, showing app"); // Debugging
   }
 
   return (
