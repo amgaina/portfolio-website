@@ -1,10 +1,9 @@
-/* Projects Page Layout */
-.projects-page {
-    padding: 50px;
-    min-height: 100vh;
+.research-page {
+  padding: 50px;
+  min-height: 100vh;
   }
   
-  .page-title{
+  .research-title {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
@@ -19,17 +18,15 @@
     border-bottom: 5px solid #0072ff;
   }
   
-  
-  .projects-container {
+  .research-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     justify-content: center;
     align-items: center;
   }
   
-  .project-card {
-    border: 1px solid #ccc;
+  .research-card {
     background-color: white;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -44,25 +41,25 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .project-card:hover {
+  .research-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
   
-  .project-image {
-    width: 100%;
+  .research-image {
+    width: 85%;
     height: 200px;
     object-fit: cover;
   }
   
-  .project-info {
+  .research-info {
     padding: 20px;
     text-align: center;
     overflow-y: auto;
     flex-grow: 1;
   }
   
-  .project-info h2 {
+  .research-info h2 {
     font-size: 1.5rem;
     color:#7d2535;
     font-weight: bold;
@@ -70,72 +67,48 @@
     font-family: 'Poppins', sans-serif;
   }
   
-  .project-info p {
+  .research-info p {
     font-size: 1rem;
     color: black;
     margin-bottom: 10px;
   }
   
-  .skills-used {
-    margin-bottom: 15px;
-  }
-  
   .skills-used h3 {
-    font-size: 1.2rem;
-    color: #7d2535;
     margin-bottom: 10px;
+    font-weight: bold;
   }
   
   .skills-used ul {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 20px;
   }
   
-  .skills-used ul li {
-    font-size: 0.9rem;
-    color: white;
+  .skills-used li {
+    list-style: circle;
+  }
+  
+  .research-link {
     display: inline-block;
-    margin-right: 5px;
-    padding: 5px 8px;
-    background: #7d2535;
-    border-radius: 8px;
-  }
-  
-  .project-link {
-    text-decoration: underline;
-    font-size: 1rem;
-    color: #0072ff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .project-link:hover {
-    color: #0056b3;
-    cursor: pointer;
-  }
-
-  .github-link-container {
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .github-button {
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #0072ff;
     color: white;
-    padding: 15px 30px;
-    border-radius: 25px;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease-in-out;
   }
   
-  .github-button:hover {
-    background-color: #555;
+  .research-link:hover {
+    background-color: #0056cc;
   }
-  @media (max-width: 800px) {
-    .projects-container {
-      grid-template-columns: 1fr; /* One column for tablet and mobile */
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
   

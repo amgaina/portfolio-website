@@ -34,7 +34,7 @@ const projects = [
       "A software made for the application submission process at Emerging Scholars at ULM.",
     image: require("../Utils/application_submission.png"),
     link: "https://github.com/Georgey764/Grant-Application-Management-System?tab=readme-ov-file#using-app",
-    skills: ["ReactJs, Java, Spring Boot, MySQL, SQL"],
+    skills: ["ReactJs, Java, Spring Boot, MySQL, SQL, AWS"],
   },
   {
     title: "Credit Card Fraud Detection Model",
@@ -58,11 +58,11 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className="projects-page">
-      <h1 className="page-title">My Projects</h1>
-      <div className="projects-container p-5">
+    <div className="projects-page" id="project">
+      <h1 className="page-title mb-5">My Projects</h1>
+      <div className="projects-container">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <div key={index} className="project-card m-3">
             <img
               src={project.image}
               alt={project.title}

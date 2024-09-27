@@ -1,6 +1,7 @@
 body {
     background-color: #ffffff; 
-    color: #000000; 
+    color:#7d2535;
+    font-weight: bold;
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
@@ -18,11 +19,6 @@ position: relative;
 .navbar.bg-light {
     background-color: #ffffff;
 }
-
-.navbar.bg-dark {
-    background-color: #3b2a1b;
-}
-
 .navbar-nav .nav-link {
     color: inherit; 
     transition: color 0.3s ease, transform 0.3s ease; 
@@ -31,11 +27,12 @@ position: relative;
 .navbar-nav .nav-link:hover {
     color: #007bff; 
     transform: scale(1.05); 
+    cursor: pointer;
 }
 
 .navbar-logo {
-    width: 100px; 
-    height: auto; 
+    width: auto; 
+    height: 60px; 
     transition: transform 0.3s ease; 
 }
 
@@ -43,14 +40,12 @@ position: relative;
     transform: scale(1.1); 
 }
 
-/* Custom close button styles */
 .btn-close {
     border: none;
-    background-color: #000; /* Black background */
-    color: #fff; /* White color for the button */
-    font-size: 1.5rem; /* Adjust font size as needed */
-    width: 40px; /* Width of the button */
-    height: 40px; /* Height of the button */
+    background-color: #000; 
+    font-size: 1.5rem;  
+    width: 40px; 
+    height: 40px; 
     display: flex;
     align-items: center;
     justify-content: center;

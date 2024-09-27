@@ -1,0 +1,104 @@
+.contact-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: black;
+  }
+  
+  .contact-page-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    border-bottom: 5px solid #0072ff;
+  }
+
+
+  .contact-title {
+    font-size: 2.5rem;
+    color: #7d2535 !important;
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .contact-form .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #7d2535;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .contact-form .animated-button {
+    background-color: #7d2535 !important; 
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    width: 100%;
+  }
+  
+  .contact-form .animated-button:hover {
+    transform: scale(1.05);
+    color: skyblue; 
+    background-color:rgb(210, 90, 112);
+  }
+  
+  .profile-pic {
+    width: 100%;
+    max-width: 350px;
+    animation: floatPic 5s infinite ease-in-out;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer p {
+    color: #7d2535;
+    margin-bottom: 10px;
+  }
+  
+  /* Social Icons */
+  .footer .social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .footer .social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes floatPic {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+  }
+  .message-text{
+    color: green;
+    font-size: 14px;
+  }
+  

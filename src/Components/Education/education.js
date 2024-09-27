@@ -9,7 +9,7 @@ function Education() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
-    const currentRef = sectionRef.current; // Capture the current ref value
+    const currentRef = sectionRef.current;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -30,17 +30,15 @@ function Education() {
   }, []); // Empty dependency array
 
   return (
-    <div ref={sectionRef} className="education-section container mt-5" id = "education">
-      <h1
-        className={`text-center mb-5 ${
-          inView ? "animate__animated animate__fadeInDown text-primary" : ""
-        }`}
-      >
-        Education
-      </h1>
+    <div
+      ref={sectionRef}
+      className="education-section container mt-5"
+      id="education"
+    >
+      <h1 className={`text-center mb-5}`} id = "education-header">Education</h1>
 
       <div
-        className={`education-item mb-5 row ${
+        className={`education-item mt-5 mb-5 row ${
           inView ? "animate__animated animate__fadeInLeft" : ""
         }`}
       >
@@ -74,8 +72,11 @@ function Education() {
         </div>
         <div className="col-md-8">
           <h2 className="institution">University of Louisiana at Monroe</h2>
-          <p>Pursuing Undergraduate Degree</p>
-
+          <p>Pursuing Undergraduate Degree (2022 - current)</p>
+          <ul className="text-black">
+            <li> AI and Machine Learning</li>
+            <li>Software Engineering</li>
+          </ul>
           <div className="university-experiences mt-3">
             <h4>Experiences:</h4>
 

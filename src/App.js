@@ -1,14 +1,19 @@
-import './App.css';
-import Home from "./Components/Homepage/home.js"
-import Education from './Components/Education/education.js';
-import Project from './Components/Projects/project.js'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OpenPage from "./Components/OpenPage/home.js";
+import Paper from "./Components/Paper/paper.js";
+import Blog from "./Components/Blog/blog.js";
+
 function App() {
   return (
-    <div className="App">
-      <Home/>
-      <Education/>
-      <Project/>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<OpenPage/>} />
+          <Route path="/paper" element={<Paper />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

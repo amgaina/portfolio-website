@@ -1,40 +1,38 @@
-import React, { useState, useEffect } from "react";
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../Utils/logo.png";
 
 function NavBar() {
-  const [darkMode, setDarkMode] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleBackground = () => {
-    setDarkMode(!darkMode);
-  };
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  useEffect(() => {
-    if (darkMode) {
-      document.body.classList.add("dark-mode");
-    } else {
-      document.body.classList.remove("dark-mode");
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
     }
-  }, [darkMode]);
+  };
+
+  const openPaperSectionInNewTab = () => {
+    window.open("/paper", "_blank");
+  };
+  const openBlogSectionInNewTab = () => {
+    window.open("/blog", "_blank");
+  };
 
   return (
     <>
-      <nav
-        className={`navbar navbar-expand-lg ${
-          darkMode ? "bg-dark" : "bg-light"
-        }`}
-      >
+      <nav className={`navbar navbar-expand-lg bg-light`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="#home">
             <img src={logo} alt="Abhishek Amgain" className="navbar-logo" />
           </a>
           <button
-            className="btn btn-close d-lg-none position-absolute end-0 top-0 mt-2 me-2 "
+            className="btn btn-close d-lg-none position-absolute end-0 top-0 mt-2 me-2"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -48,52 +46,64 @@ function NavBar() {
           >
             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#about">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("about")}
+                >
                   About
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#education">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("education")}
+                >
                   Education
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#projects">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("project")}
+                >
                   Projects
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#research">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("research")}
+                >
                   Research
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#experience">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("experience")}
+                >
                   Experience
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#papers">
+                <a className="nav-link" onClick={openPaperSectionInNewTab}>
                   Papers
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#blogs">
-                  Blogs
+                <a className="nav-link" onClick={openBlogSectionInNewTab}>
+                  Blog
                 </a>
               </li>
               <li className="nav-item mx-2">
-                <a className="nav-link" href="#contact">
+                <a
+                  className="nav-link"
+                  onClick={() => scrollToSection("contact")}
+                >
                   Contact
                 </a>
               </li>
             </ul>
-            <button
-              className="btn btn-outline-primary ms-auto"
-              onClick={toggleBackground}
-            >
-              {darkMode ? "Light Mode" : "Dark Mode"}
-            </button>
           </div>
         </div>
       </nav>

@@ -1,0 +1,82 @@
+.experience-section {
+    padding: 50px;
+    min-height: 100vh;
+    color: black;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    border-bottom: 5px solid #0072ff;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .experience-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .experience-image {
+    width: 100px;
+  height: auto; 
+  object-fit: contain; 
+  }
+  
+  .experience-info {
+    padding: 15px;
+    flex: 1;
+  }
+  
+  .duration {
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  .skills-used {
+    margin-top: 10px;
+  }
+  
+  .skills-used h4 {
+    margin-bottom: 5px;
+  }
+  
+  .skills-used ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .skills-used li {
+    background-color: #e9ecef;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+  }
+    .experience-info h2 {
+        color: #7d2535 !important; 
+      }
+
+  
