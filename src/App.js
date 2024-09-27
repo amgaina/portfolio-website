@@ -6,15 +6,13 @@ import Blog from "./Components/Blog/blog.js";
 function App() {
   return (
     <HashRouter>
-      <Routes>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<OpenPage />} />
-            <Route path="/paper" element={<Paper />} />
-            <Route path="/blog" element={<Blog />} />
-          </Routes>
-        </div>
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<OpenPage />} />
+          <Route path="/paper" element={<Paper />} />
+          <Route path="/blog" element={<Blog />} />
+        </Routes>
+      </div>
     </HashRouter>
   );
 }
