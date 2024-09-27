@@ -35,7 +35,9 @@ function Education() {
       className="education-section container mt-5"
       id="education"
     >
-      <h1 className={`text-center mb-5}`} id = "education-header">Education</h1>
+      <h1 className={`text-center mb-5}`} id="education-header">
+        Education
+      </h1>
 
       <div
         className={`education-item mt-5 mb-5 row ${
@@ -75,6 +77,7 @@ function Education() {
           <p>Pursuing Undergraduate Degree (2022 - current)</p>
           <ul className="text-black">
             <li> AI and Machine Learning</li>
+            <li>Mathematics and Statistics</li>
             <li>Software Engineering</li>
           </ul>
           <div className="university-experiences mt-3">
