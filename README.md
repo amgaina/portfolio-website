@@ -4,7 +4,7 @@ Welcome to my digital portfolio! I'm Abhishek, a passionate **Computer Science**
 
 ## 🚀 About Me
 
-I am driven by a strong desire to use the power of technology to solve real-world problems. With a keen interest in **AI**, **Data Science**, and **Web Development**, I strive to create innovative solutions that make a difference.
+I am passionate about using technology to solve real-world problems. With interests in AI, Data Science, and Web Development, I aim to create innovative solutions that make a positive impact.
 
 ## 🌐 Sections
 
