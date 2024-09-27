@@ -23,21 +23,18 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  if (loading) {
-    console.log("Loading is true, showing spinner"); // Debugging
-    return <Loading />;
-  } else {
-    console.log("Loading is false, showing app"); // Debugging
-  }
-
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route path="/" element={<OpenPage />} />
-          <Route path="/paper" element={<Paper />} />
-          <Route path="/blog" element={<Blog />} />
-        </Routes>
+        {loading ? (
+          <Loading />
+        ) : (
+          <Routes>
+            <Route path="/" element={<OpenPage />} />
+            <Route path="/paper" element={<Paper />} />
+            <Route path="/blog" element={<Blog />} />
+          </Routes>
+        )}
       </div>
     </Router>
   );
