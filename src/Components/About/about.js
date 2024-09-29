@@ -45,8 +45,8 @@ const About = () => {
                 <strong>Relevant Certifications:</strong>
                 <div className="certifications">
                   <br />
-                  - Machine Learning Foundation (Stanford Online)
-                  <br />- Deep Learning Foundation (Stanford Online)
+                  - Machine Learning Specialization (Stanford University)
+                  <br />- Deep Learning Specialization (Stanford University)
                 </div>
               </p>
             </p>

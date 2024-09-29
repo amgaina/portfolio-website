@@ -52,7 +52,7 @@ const Contact = () => {
           <div className="col-md-6 right-form">
             <h1 className="contact-title animated fadeInRight">Get In Touch</h1>
             <form
-              className="contact-form animated fadeInRight"
+              className="contact-form animated fadeInRight m-2"
               onSubmit={handleSubmit}
               ref={form}
             >
