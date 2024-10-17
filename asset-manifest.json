@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.59040204.css",
-    "main.js": "/static/js/main.49820027.js",
+    "main.css": "/static/css/main.7fd366a9.css",
+    "main.js": "/static/js/main.02010eba.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/myImage.png": "/static/media/myImage.48291e42cb92f82a9e11.png",
-    "static/media/abhishek.PNG": "/static/media/abhishek.c0a3e15258a84135e368.PNG",
+    "static/media/abhishek.png": "/static/media/abhishek.c0a3e15258a84135e368.png",
     "static/media/movie_recommender_syste.png": "/static/media/movie_recommender_syste.4f8422225e886b38c938.png",
     "static/media/trio_workshop2.png": "/static/media/trio_workshop2.bef9cf125d50d7bae5ed.png",
     "static/media/credit_card_fraud_detection.png": "/static/media/credit_card_fraud_detection.02cdbf478784408b9cf0.png",
@@ -22,12 +22,12 @@
     "static/media/logo.png": "/static/media/logo.eed4dfe8dbbde3a42895.png",
     "static/media/LinkedIn.png": "/static/media/LinkedIn.68ac41e1459436bfd38f.png",
     "index.html": "/index.html",
-    "main.59040204.css.map": "/static/css/main.59040204.css.map",
-    "main.49820027.js.map": "/static/js/main.49820027.js.map",
+    "main.7fd366a9.css.map": "/static/css/main.7fd366a9.css.map",
+    "main.02010eba.js.map": "/static/js/main.02010eba.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59040204.css",
-    "static/js/main.49820027.js"
+    "static/css/main.7fd366a9.css",
+    "static/js/main.02010eba.js"
   ]
 }
