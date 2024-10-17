@@ -1,91 +1,91 @@
-body {
-    background-color: #ffffff; 
-    color:#7d2535;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
-
-body.dark-mode {
-    background-color: rgb(79, 77, 77);
-    color: #ffffff; 
-}
+/* navbar.css */
 
 .navbar {
-position: relative;
-  z-index: 1000; 
-  transition: margin-bottom 0.3s ease;
-}
-
-.navbar.bg-light {
     background-color: #ffffff;
-}
-.navbar-nav .nav-link {
-    color: inherit; 
-    transition: color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #007bff; 
-    transform: scale(1.05); 
-    cursor: pointer;
+.navbar-light .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
 }
 
 .navbar-logo {
-    width: auto; 
-    height: 60px; 
-    transition: transform 0.3s ease; 
+    height: 50px;
+    width: auto;
 }
 
-.navbar-brand:hover .navbar-logo {
-    transform: scale(1.1); 
-}
-
-.btn-close {
+.navbar-toggler {
     border: none;
-    background-color: #000; 
-    font-size: 1.5rem;  
-    width: 40px; 
-    height: 40px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.btn-close:hover {
-    background-color: #333; /* Darker background on hover */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2833, 33, 33%2C 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    filter: invert(0.7);
 }
 
-/* Ensure the close button is visible only on small screens */
-@media (min-width: 992px) {
-    .btn-close {
-        display: none;
-    }
+.navbar-nav .nav-item {
+    margin-left: 1rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    text-decoration: none;
 }
 
 @media (max-width: 992px) {
-    .navbar-nav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar-collapse {
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        left: 0;
         width: 100%;
+        z-index: 1;
+    }
+
+    .navbar-toggler {
+        outline: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .nav-item {
+        margin-left: 0;
+        border-bottom: 1px solid #f1f1f1;
+    }
+
+    .nav-link {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .collapse.show {
+        display: block;
     }
 }
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    visibility: hidden; /* Hidden by default */
-    opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
-    z-index: 1000; /* Ensure it’s above other content */
-  }
-  
-  .overlay.show {
-    visibility: visible;
-    opacity: 1;
-  }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:focus {
+    color: #007bff;
+}
+
+html {
+    scroll-behavior: smooth;
+}

@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../Utils/logo.png";
@@ -15,105 +14,56 @@ function NavBar() {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    setIsMenuOpen(false);
   };
 
-  const openPaperSectionInNewTab = () => {
-    window.open("#/paper", "_blank", "noopener,noreferrer");
+  const openSectionInNewTab = (url) => {
+    window.open(url, "_blank", "noopener,noreferrer");
   };
-  
-  const openBlogSectionInNewTab = () => {
-    window.open("#/blog", "_blank", "noopener,noreferrer");
-  };
+
+  const navItems = [
+    { name: "About", action: () => scrollToSection("about") },
+    { name: "Education", action: () => scrollToSection("education") },
+    { name: "Projects", action: () => scrollToSection("project") },
+    { name: "Research", action: () => scrollToSection("research") },
+    { name: "Experience", action: () => scrollToSection("experience") },
+    { name: "Papers", action: () => openSectionInNewTab("#/paper") },
+    { name: "Blog", action: () => openSectionInNewTab("#/blog") },
+    { name: "Contact", action: () => scrollToSection("contact") },
+  ];
 
   return (
-    <>
-      <nav className={`navbar navbar-expand-lg bg-light`}>
-        <div className="container-fluid">
-          <a className="navbar-brand" href="#home">
-            <img src={logo} alt="Abhishek Amgain" className="navbar-logo" />
-          </a>
-          <button
-            className="btn btn-close d-lg-none position-absolute end-0 top-0 mt-2 me-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Close"
-          ></button>
-          <div
-            className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
-            id="navbarSupportedContent"
-          >
-            <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("about")}
+    <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+      <div className="container">
+        <a className="navbar-brand" href="#home">
+          <img src={logo} alt="Abhishek Amgain" className="navbar-logo" />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          onClick={handleMenuToggle}
+          aria-controls="navbarNav"
+          aria-expanded={isMenuOpen}
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`} id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            {navItems.map((item, index) => (
+              <li className="nav-item" key={index}>
+                <button
+                  className="nav-link btn btn-link"
+                  onClick={item.action}
                 >
-                  About
-                </a>
+                  {item.name}
+                </button>
               </li>
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("education")}
-                >
-                  Education
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("project")}
-                >
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("research")}
-                >
-                  Research
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("experience")}
-                >
-                  Experience
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" onClick={openPaperSectionInNewTab}>
-                  Papers
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a className="nav-link" onClick={openBlogSectionInNewTab}>
-                  Blog
-                </a>
-              </li>
-              <li className="nav-item mx-2">
-                <a
-                  className="nav-link"
-                  onClick={() => scrollToSection("contact")}
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
+            ))}
+          </ul>
         </div>
-      </nav>
-      {/* Overlay */}
-      <div
-        className={`overlay ${isMenuOpen ? "show" : ""}`}
-        onClick={handleMenuToggle}
-      ></div>
-    </>
+      </div>
+    </nav>
   );
 }
 

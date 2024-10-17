@@ -1,33 +1,62 @@
 import React from "react";
+import profileImage from "../Utils/abhishek.png";
 import "./home.css";
-import profileImage from "../Utils/abhishek.PNG";
 import NavBar from "./navbar";
 
 function Home() {
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="home" id = "home">
+    <div
+      className="home"
+      id="home"
+      style={{ backgroundColor: "#f4f4f9", minHeight: "100vh" }}
+    >
       <NavBar />
-      <div className="our_div">
-        <header className="hero d-flex flex-column justify-content-center align-items-center text-center text-white">
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{ minHeight: "100vh" }}
+      >
+        <div className="text-center">
           <img
             src={profileImage}
             alt="Abhishek Amgain"
-            className="profile-image mb-4"
+            className="rounded-circle mb-4"
+            style={{
+              width: "150px",
+              height: "150px",
+              border: "5px solid #007bff",
+            }}
           />
-          <p className="h4 mb-3">Abhishek Amgain</p>
-          <h1 className="display-4 mb-3">Welcome to My Portfolio</h1>
-          <h2 className="display-5 mb-3 animated-title">AI Research Intern</h2>
-          <p className="mb-4 explain">
-            Exploring the intersection of technology and innovation through
+          <h1
+            className="display-4 mb-2"
+            style={{ fontFamily: "'Courier New', monospace" }}
+          >
+            Abhishek Amgain
+          </h1>
+          <p className="lead" style={{ fontStyle: "italic", color: "#555" }}>
+            AI & Machine Learning Enthusiast
+          </p>
+          <p
+            className="text-muted mb-4"
+            style={{ maxWidth: "600px", margin: "0 auto" }}
+          >
+            Exploring the intersection of technology and innovation through AI, 
             machine learning and data science.
           </p>
-          <a
-            href="#project"
-            className="btn btn-primary btn-lg animated-button"
+          <button
+            className="btn btn-outline-primary btn-lg"
+            style={{ fontFamily: "'Courier New', monospace" }}
+            onClick={() => scrollToSection("project")}
           >
             View My Work
-          </a>
-        </header>
+          </button>
+        </div>
       </div>
     </div>
   );

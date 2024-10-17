@@ -13,7 +13,7 @@ const About = () => {
       <div className="container">
         <div className="row align-items-center justify-content-center">
           {/* Column for Image */}
-          <div className="col-md-6 text-center">
+          <div className="col-md-6 text-center mb-4">
             <img src={MyImage} alt="About Me" className="about-pic" />
           </div>
 
@@ -22,23 +22,19 @@ const About = () => {
             <h2 className="about-title animated fadeInRight">
               Passionate Machine Learning Engineer
             </h2>
-            <p className="animated fadeInRight text-black">
+            <p className="about-points animated fadeInRight">
               <ul>
                 <li>
-                  Double majoring in Computer Science and Mathematics, with a
-                  strong focus on Machine Learning, AI, and Data Science.
+                  Double majoring in Computer Science and Mathematics, with a strong focus on Machine Learning, AI, and Data Science.
                 </li>
                 <li>
-                  Passionate about building models to solve real-world problems,
-                  from image recognition to object detection.
+                  Passionate about building models to solve real-world problems, from image recognition to object detection.
                 </li>
                 <li>
-                  Over 3 years of experience in data analysis and machine
-                  learning projects.
+                  Over 3 years of experience in data analysis and machine learning projects.
                 </li>
                 <li>
-                  Especially excited about working with natural language
-                  processing(NLP) models.
+                  Especially excited about working with natural language processing (NLP) models.
                 </li>
               </ul>
               <p>
@@ -46,13 +42,13 @@ const About = () => {
                 <div className="certifications">
                   <br />
                   - Machine Learning Specialization (Stanford University)
-                  <br />- Deep Learning Specialization (Stanford University)
+                  <br />
+                  - Deep Learning Specialization (Stanford University)
                 </div>
               </p>
             </p>
-            <p className="animated fadeInRight text-black">
-              Combining creativity, mathematics, and programming, I am always
-              eager to take on new challenges and grow as an engineer.
+            <p className="animated fadeInRight">
+              Combining creativity, mathematics, and programming, I am always eager to take on new challenges and grow as an engineer.
             </p>
 
             <div className="social-links animated fadeInRight mt-5">
@@ -63,7 +59,7 @@ const About = () => {
               >
                 <img
                   src={LinkedIn}
-                  alt="GitHub"
+                  alt="LinkedIn"
                   className="about-social-icon"
                 />
               </a>
