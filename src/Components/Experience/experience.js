@@ -25,7 +25,7 @@ const experiences = [
     image: require("../Utils/led.png"),
   },
   {
-    title: "Sales Analytics Intern",
+    title: "Data Analyst Intern",
     company: "Qatar Airways",
     duration: "May 2023 - August 2023",
     description: [
