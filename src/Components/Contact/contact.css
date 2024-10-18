@@ -1,9 +1,8 @@
 .contact-page {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: black;
+    font-family: 'Roboto', sans-serif;
+  padding: 50px 0 0;
+  position: relative;
+
   }
   
   .contact-page-title {

@@ -26,17 +26,20 @@ const researchProjects = [
 
 const ResearchPage = () => {
   return (
-    <div className="research-page" id = "research">
+    <div className="research-page" id="research">
       <h1 className="research-title mb-5">My Research</h1>
-      <div className="research-container mt-5">
+      <div className="container research-container">
         {researchProjects.map((project, index) => (
-          <div key={index} className="research-card">
+          <div key={index} className="project-card">
+            {" "}
+            {/* Change here for consistent card style */}
             <img
               src={project.image}
               alt={project.title}
-              className="research-image"
+              className="project-image"
             />
-            <div className="research-info">
+            <div className="project-info">
+              {" "}
               <h2>{project.title}</h2>
               <p>{project.description}</p>
               <div className="skills-used">
@@ -49,7 +52,7 @@ const ResearchPage = () => {
               </div>
               <a
                 href={project.link}
-                className="research-link"
+                className="project-link"
                 target="_blank"
                 rel="noopener noreferrer"
               >

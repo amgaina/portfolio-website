@@ -12,9 +12,14 @@
     padding: 20px 0;
     border-bottom: 5px solid #0072ff;
   }
+  .experience-row{
+    gap: 30px;
+  }
   .experience-section {
-    padding: 40px 0;
-    background-color: #f8f9fa;
+    background: #f4f3f1;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0;
+  position: relative;
   }
   
   .section-title {
@@ -39,8 +44,7 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .experience-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
   }
    
   .experience-image {

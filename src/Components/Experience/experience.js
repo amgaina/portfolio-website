@@ -3,11 +3,11 @@ import "./experience.css";
 
 const experiences = [
   {
-    title: "AI Research Intern",
+    title: "Student Research Intern",
     company: "Louisiana Economic of Development",
     duration: "Oct 2023 - Present",
     description: [
-      "Worked with senior researchers on an image recognition project, contributing to a 20% improvement in object detection accuracy.",
+      "Worked with peers on various image recognition project, contributing to a 20% improvement in object detection accuracy.",
       "Managed extensive datasets through cleaning, preprocessing, and feature engineering, ensuring high-quality inputs for model training and evaluation.",
       "Executed experiments to validate model performance, resulting in a 15% increase in sentiment analysis accuracy.",
       "Compiled detailed reports and created presentations to effectively communicate research progress and results to stakeholders.",
@@ -68,9 +68,9 @@ const ExperienceSection = () => {
     <div className="experience-section" id="experience">
       <h1 className="section-title mb-5">Experience</h1>
       <div className="container">
-        <div className="row">
+        <div className="row experience-row">
           {experiences.map((exp, index) => (
-            <div key={index} className="experience-card m-3">
+            <div key={index} className="experience-card">
               <img
                 src={exp.image}
                 alt={exp.company}

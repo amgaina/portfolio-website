@@ -1,6 +1,7 @@
 .research-page {
-  padding: 50px;
-  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0;
+  position: relative;
   }
   
   .research-title {
@@ -17,18 +18,19 @@
     padding: 20px 0;
     border-bottom: 5px solid #0072ff;
   }
-  
   .research-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1200px; /* Ensure the same width as in projects */
   }
   
-  .research-card {
-    border: 1px solid #ccc;
-    background-color: white;
+  .project-card {
+    border: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: calc(100% - 5px);
@@ -39,77 +41,80 @@
     overflow: hidden;
     position: relative;
     transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
   }
   
-  .research-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  .project-card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
   }
   
-  .research-image {
-    width: 85%;
+  .project-image {
+    width: 100%;
     height: 200px;
     object-fit: cover;
   }
   
-  .research-info {
+  .project-info {
     padding: 20px;
     text-align: center;
     overflow-y: auto;
     flex-grow: 1;
   }
   
-  .research-info h2 {
+  .project-info h2 {
     font-size: 1.5rem;
-    color:#7d2535;
+    color: #7d2535;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
   
-  .research-info p {
+  .project-info p {
     font-size: 1rem;
     color: black;
     margin-bottom: 10px;
   }
   
+  .skills-used {
+    margin-bottom: 15px;
+  }
+  
   .skills-used h3 {
+    font-size: 1.2rem;
+    color: #7d2535;
     margin-bottom: 10px;
-    font-weight: bold;
   }
   
   .skills-used ul {
-    padding-left: 20px;
+    list-style-type: none;
+    padding: 0;
   }
   
-  .skills-used li {
-    list-style: circle;
-  }
-  
-  .research-link {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #0072ff;
+  .skills-used ul li {
+    font-size: 0.9rem;
     color: white;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 5px 8px;
+    background: #7d2535;
+    border-radius: 8px;
   }
   
-  .research-link:hover {
-    background-color: #0056cc;
+  .project-link {
+    text-decoration: underline;
+    font-size: 1rem;
+    color: #0072ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }
   
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
+  .project-link:hover {
+    color: #0056b3;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 800px) {
+    .research-container {
+      grid-template-columns: 1fr; /* One column for tablet and mobile */
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
-  

@@ -2,14 +2,13 @@ import React from "react";
 import "./education.css";
 import oxfordLogo from "../Utils/oxfordLogo.png";
 import ulmLogo from "../Utils/ulmLogo.png";
-import "animate.css";
 
 function Education() {
   return (
-    <div className="education-section mt-5 " id="education">
-      <h1 className="contact-page-title mb-5">Education</h1>
+    <div className="education-section" id="education">
+      <h1 className="contact-page-title">Education</h1>
       <div className="container">
-        <div className={`education-item mt-5 mb-5 row`}>
+        <div className="education-item row">
           <div className="col-md-4 text-center">
             <img
               src={oxfordLogo}
@@ -30,28 +29,28 @@ function Education() {
           </div>
         </div>
 
-        <div className={`education-item mb-5 row`}>
+        <div className="education-item row">
           <div className="col-md-4 text-center">
             <img src={ulmLogo} alt="ULM Logo" className="education-logo" />
           </div>
           <div className="col-md-8">
             <h2 className="institution">University of Louisiana at Monroe</h2>
             <p>Pursuing Undergraduate Degree (2022 - current)</p>
-            <ul className="text-black">
-              <li> AI and Machine Learning</li>
+            <ul>
+              <li>AI and Machine Learning</li>
               <li>Mathematics and Statistics</li>
               <li>Software Engineering</li>
             </ul>
             <div className="university-experiences mt-3">
               <h4>Experiences:</h4>
 
-              <div className={`experience-item mb-4`}>
+              <div className="experience-item">
                 <h5>Data Analytics Intern</h5>
                 <p>
                   <strong>Timeline:</strong> May 2024 - Present
                 </p>
                 <p>
-                  Collaborating with Dr. Sreekumari on a data analytics research
+                  Collaborated with Dr. Sreekumari on a data analytics research
                   project focused on Louisiana cancer data from 2016-2020,
                   provided by LSU Health, New Orleans. Our research aims to
                   uncover significant trends and insights that can contribute to
@@ -61,7 +60,7 @@ function Education() {
                 </p>
               </div>
 
-              <div className={`experience-item mb-4`}>
+              <div className="experience-item">
                 <h5>Full-stack Developer</h5>
                 <p>
                   Jan 2024 to Apr 2024: Collaborated with Dr. Lon Smith and
@@ -71,21 +70,13 @@ function Education() {
                   efficient for students and faculty. Built using Java (Spring),
                   React, Bootstrap, and AWS.
                 </p>
-                <p>
-                  <strong>Skills:</strong> Java, React.js, Bootstrap, Spring,
-                  AWS
-                </p>
               </div>
 
-              <div className={`experience-item mb-4`}>
+              <div className="experience-item">
                 <h5>Web Development Intern</h5>
                 <p>
-                  Aug 2023 to Jan 2024: Worked on web project to develop web
-                  application for the Monroe Convention Visitor's Bureau.
-                </p>
-                <p>
-                  <strong>Skills:</strong> HTML, CSS, Google Script, Leaflet,
-                  JavaScript
+                  Aug 2023 to Jan 2024: Developed a web app for Monroe
+                  Convention Visitor's Bureau.
                 </p>
               </div>
             </div>

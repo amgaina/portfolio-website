@@ -49,7 +49,7 @@ const BlogSection = () => {
   return (
     <div className="blog-section" id="blog">
       <h1 className="section-title mb-5">Blog</h1>
-      <div className="blog-container">
+      <div className=" container blog-container">
         {blogPosts.map((post, index) => (
           <div key={index} className="blog-card mb-5 p-3">
             <h2 className="blog-title">{post.title}</h2>

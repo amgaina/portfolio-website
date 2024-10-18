@@ -1,90 +1,129 @@
-.social-links {
-    margin-top: 20px;
-  }
-  .about-page-title {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: black;
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, #00c6ff, #0072ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
-    padding: 20px 0;
-    border-bottom: 5px solid #0072ff;
-  }
+.about-section {
+  background: #f4f3f1;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0;
+  position: relative;
+}
 
-  .about-social-icon {
-    width: 100%;
-    max-width: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-    margin-right: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .about-social-icon:hover {
-    transform: scale(1.2);
-    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
-  }
-  
-  .about-section {
-    padding: 100px 0;
-    background-color: #f4f4f9;
-  }
-  
-  .about-pic {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 15px;
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
-  }
-  
-  .about-title {
-    font-size: 2.5rem;
-    color: #7d2535;
-    font-weight: bold;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  .about-text p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #7d2535;
-  }
-  
-  /* Floating animation for image */
-  @keyframes floatPic {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0); }
-  }
-  
-  .white-background {
-    background-color: white;
-    color: black;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  .certifications {
-    color: black !important;
-  }
-  
-  /* Responsive text for smaller screens */
-  @media screen and (max-width: 768px) {
-    .about-title {
-      font-size: 2rem;
-    }
-    .about-text p {
-      font-size: 1rem;
-    }
-  }
-  .about-points{
-    color:black !important;
-  }
+.about-page-title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  padding: 20px 0;
+  border-bottom: 5px solid #0072ff;
+}
+
+.about-pic {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: #4a2c2a;
+  font-weight: 700;
+}
+
+.white-background {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  color: #4a2c2a;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-points {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.about-points li {
+  margin-bottom: 15px;
+  color: black;
+}
+
+.certifications {
+  color: black;
+  margin-top: 10px;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.about-social-icon {
+  width: 100%;
+  max-width: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  margin-right: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+.skills-section {
+  background-color: #f4f3f1;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.skills-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.skills-title::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #0072ff;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-item {
+  font-size: 1.2rem;
+  color: #7d2535;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.skill-item:hover {
+  background-color: #0072ff;
+  color: white;
+}

@@ -5,7 +5,7 @@ const projects = [
   {
     title: "House Price Prediction",
     description:
-      "A Flask-based web application for predicting house prices in the Bangalore area.",
+      "A heartfelt project that helps families find their dream homes by predicting house prices in Bangalore. It’s like bringing together dreams and reality.",
     image: require("../Utils/house_price_prediction.png"),
     link: "https://github.com/amgaina/House-Price-Prediction",
     skills: ["Python, Flask, Numpy, Scikit-Learn, Pandas, Bootstrap"],
@@ -13,7 +13,7 @@ const projects = [
   {
     title: "Stock Price Pattern Prediction",
     description:
-      "Implementation of a Long Short-Term Memory (LSTM) and Recurrent Neural Network (RNN) model to predict Google stock prices that achieves an accuracy of approximately 90% accuracy.",
+      "With a touch of nostalgia, this project uses advanced LSTM and RNN models to predict Google stock prices, achieving approximately 90% accuracy—just like predicting the future!",
     image: require("../Utils/google_stock_price_pattern_prediction.png"),
     link: "https://github.com/amgaina/Google_Stock_Price_Pattern_Prediction",
     skills: ["Numpy, Tensorflow, LSTM, Scikit-Learn, Matplotlib, RNN"],
@@ -21,7 +21,7 @@ const projects = [
   {
     title: "Movie Recommender System",
     description:
-      "The system recommends movies based on a given movie title by analyzing the similarity between movie plots.",
+      "Remember those cozy movie nights? This system recommends films based on your favorites, capturing the magic of storytelling through movie plots.",
     image: require("../Utils/movie_recommender_syste.png"),
     link: "https://github.com/amgaina/Movie-Recommender-System",
     skills: [
@@ -31,7 +31,7 @@ const projects = [
   {
     title: "Application Management System",
     description:
-      "A software made for the application submission process at Emerging Scholars at ULM.",
+      "A user-friendly software that simplifies the application submission process at Emerging Scholars at ULM, reflecting our commitment to making dreams come true.",
     image: require("../Utils/application_submission.png"),
     link: "https://github.com/Georgey764/Grant-Application-Management-System?tab=readme-ov-file#using-app",
     skills: ["ReactJs, Java, Spring Boot, MySQL, SQL, AWS"],
@@ -39,7 +39,7 @@ const projects = [
   {
     title: "Credit Card Fraud Detection Model",
     description:
-      "A credit card fraud detection model using the Isolation Forest algorithm under the umbrella of anomaly detection. The model is designed to identify fraudulent transactions with a high accuracy of 99.7%.",
+      "A cutting-edge model using the Isolation Forest algorithm to protect against fraud, achieving a remarkable 99.7% accuracy—a modern-day hero in finance.",
     image: require("../Utils/credit_card_fraud_detection.png"),
     link: "https://github.com/amgaina/Credit-Card-Fraud-Detection",
     skills: [
@@ -49,7 +49,7 @@ const projects = [
   {
     title: "Handwritten Digit Classification",
     description:
-      "Created a neural network model to classify handwritten digits from the famous MNIST dataset. The model was developed using TensorFlow and Keras and achieved an accuracy of 98% on the test data.",
+      "A trip down memory lane! This project involves creating a neural network model that classifies handwritten digits from the famous MNIST dataset, achieving an impressive 98% accuracy.",
     image: require("../Utils/handwritten_digit_classification.png"),
     link: "https://github.com/amgaina/Hand-Written-Digit-Classification",
     skills: ["Python, Tensorflow, Keras, Matplotlib, Numpy, DNN"],
@@ -58,11 +58,11 @@ const projects = [
 
 const ProjectsPage = () => {
   return (
-    <div className="projects-page" id="project">
+    <div className="projects-page nostalgic-bg" id="project">
       <h1 className="page-title mb-5">My Projects</h1>
-      <div className="projects-container">
+      <div className="container projects-container">
         {projects.map((project, index) => (
-          <div key={index} className="project-card m-3">
+          <div key={index} className="project-card">
             <img
               src={project.image}
               alt={project.title}

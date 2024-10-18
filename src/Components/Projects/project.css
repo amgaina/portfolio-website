@@ -1,7 +1,9 @@
 /* Projects Page Layout */
 .projects-page {
-    padding: 50px;
-    min-height: 100vh;
+  background: #f4f3f1;
+  font-family: 'Roboto', sans-serif;
+  padding: 50px 0;
+  position: relative;
   }
   
   .page-title{
@@ -18,19 +20,19 @@
     padding: 20px 0;
     border-bottom: 5px solid #0072ff;
   }
-  
-  
   .projects-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; 
+  width: 100%; 
   }
   
   .project-card {
-    border: 1px solid #ccc;
-    background-color: white;
+    border: 1px solid #d3c4af;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     width: calc(100% - 5px);
@@ -41,12 +43,11 @@
     overflow: hidden;
     position: relative;
     transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
   }
   
   .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
   }
   
   .project-image {
@@ -61,14 +62,13 @@
     overflow-y: auto;
     flex-grow: 1;
   }
-  
   .project-info h2 {
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
-    color:#7d2535;
     font-weight: bold;
     margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
   }
+
   
   .project-info p {
     font-size: 1rem;
@@ -113,7 +113,7 @@
     color: #0056b3;
     cursor: pointer;
   }
-
+  
   .github-link-container {
     text-align: center;
     margin-top: 100px;
@@ -133,9 +133,10 @@
   .github-button:hover {
     background-color: #555;
   }
+  
   @media (max-width: 800px) {
     .projects-container {
       grid-template-columns: 1fr; /* One column for tablet and mobile */
     }
   }
-  
+ 
