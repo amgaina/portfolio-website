@@ -35,9 +35,9 @@ function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light fixed-top">
       <div className="container">
-        <a className="navbar-brand" href="#home">
+        <div className="navbar-brand">
           <img src={logo} alt="Abhishek Amgain" className="navbar-logo" />
-        </a>
+        </div>
         <button
           className="navbar-toggler"
           type="button"
@@ -48,14 +48,14 @@ function NavBar() {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`} id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${isMenuOpen ? "show" : ""}`}
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto">
             {navItems.map((item, index) => (
               <li className="nav-item" key={index}>
-                <button
-                  className="nav-link btn btn-link"
-                  onClick={item.action}
-                >
+                <button className="nav-link btn btn-link" onClick={item.action}>
                   {item.name}
                 </button>
               </li>
