@@ -7,7 +7,7 @@ const BlogList = ({ blogs }) => {
     <Container>
       <Row>
         {blogs.map((blog, index) => (
-          <Col lg={4} md={6} sm={12} key={index}>
+          <Col lg={4} md={6} sm={12} key={index} className = "mb-3">
             <BlogCard blog={blog} />
           </Col>
         ))}
