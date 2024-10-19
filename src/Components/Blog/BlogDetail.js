@@ -13,7 +13,7 @@ const BlogDetail = () => {
       <Container className="text-center my-5">
         <h2>This page is under maintenance.</h2>
         <p>Please visit after some hours. We are trying to fix the problem.</p>
-        <Button variant="primary" href="/blog#/blog">
+        <Button variant="primary" href="/#/blog">
           Go Back to Blog
         </Button>
       </Container>
@@ -32,7 +32,7 @@ const BlogDetail = () => {
             fluid
           />
           <div className="blog-description">{blog.description}</div>
-          <Button variant="secondary" href="/blog#/blog" className="mt-4">
+          <Button variant="secondary" href="/#/blog" className="mt-4">
             Back to Blogs
           </Button>
         </Col>
