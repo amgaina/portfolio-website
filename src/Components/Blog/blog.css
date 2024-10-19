@@ -1,57 +1,26 @@
-.blog-section {
-  background-color: #f4f4f9;
-  font-family: 'Roboto', sans-serif;
-  padding: 50px 0;
-  position: relative;
-  }
-  
-  .section-title {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-  }
-  
-  .blog-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .blog-card {
-    border: 1px solid #ccc;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 5px);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    transform: translateY(0);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .blog-card:hover{
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-  }
-  .blog-title {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .blog-description {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .blog-images {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .blog-image {
-    width: 200px;
-  height: auto; 
-  object-fit: contain; 
-  }
+/* BlogCard CSS */
+#each-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card {
+  max-height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-img {
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body-scrollable {
+  flex: 1;
+  overflow-y: auto; 
+  max-height: 200px; 
+}
+
   

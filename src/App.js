@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import OpenPage from "./Components/OpenPage/home.js";
 import Paper from "./Components/Paper/paper.js";
-import Blog from "./Components/Blog/blog.js";
+import Blog from "./Components/Blog/BlogPage.js";
+import BlogDetail from "./Components/Blog/BlogDetail.js";
 import "./App.css";
 import "./Components/OpenPage/loading.css";
 
@@ -53,6 +54,7 @@ function App() {
             <Route path="/" element={<OpenPage />} />
             <Route path="/paper" element={<Paper />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:id" element={<BlogDetail />} />
           </Routes>
         )}
       </div>
