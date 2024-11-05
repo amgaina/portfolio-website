@@ -45,18 +45,18 @@ function Education() {
               <h4>Experiences:</h4>
 
               <div className="experience-item">
-                <h5>Data Analytics Intern</h5>
+                <h5>Data Analytics</h5>
                 <p>
-                  <strong>Timeline:</strong> May 2024 - Present
+                  <strong>Timeline:</strong> May 2024 - Nov 2024
                 </p>
                 <p>
-                  Collaborated with Dr. Sreekumari on a data analytics research
-                  project focused on Louisiana cancer data from 2016-2020,
-                  provided by LSU Health, New Orleans. Our research aims to
-                  uncover significant trends and insights that can contribute to
-                  better understanding and addressing cancer in the region. We
-                  are scheduled to present our findings at the Biomedical
-                  Research Conference at LSU Shreveport on November 1, 2024.
+                  Collaborated with Dr. Sreekumari on a data analytics
+                  research project focused on Louisiana cancer data from
+                  2016-2020, provided by LSU Health, New Orleans. Our research
+                  aimed to uncover significant trends and insights to contribute
+                  to a better understanding of cancer in the region. We
+                  presented our findings at the Biomedical Research Conference
+                  at LSU Shreveport on November 1, 2024.
                 </p>
               </div>
 

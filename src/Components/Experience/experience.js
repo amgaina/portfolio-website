@@ -3,18 +3,21 @@ import "./experience.css";
 
 const experiences = [
   {
-    title: "Student Research Intern",
+    title: "Software Engineer Intern",
     company: "Louisiana Economic of Development",
     duration: "Oct 2023 - Present",
     description: [
-      "Worked with peers on various image recognition project, contributing to a 20% improvement in object detection accuracy.",
-      "Managed extensive datasets through cleaning, preprocessing, and feature engineering, ensuring high-quality inputs for model training and evaluation.",
-      "Executed experiments to validate model performance, resulting in a 15% increase in sentiment analysis accuracy.",
+      "Collaborated with peers on various software development projects, contributing to a 30% improvement in application efficiency through code optimization and testing.",
+      "Managed and optimized databases, focusing on data structuring and indexing to ensure fast and reliable access, improving query performance by 25%.",
+      "Executed tests and debugged code to validate application functionality, resulting in a 20% reduction in system errors.",
       "Compiled detailed reports and created presentations to effectively communicate research progress and results to stakeholders.",
+      "Utilized natural language processing to create chatbots for small businesses, enhancing customer engagement through automated, conversational interactions.",
     ],
     skills: [
       "Python",
       "Machine Learning",
+      "Deep Learning",
+      "Computer Vision",
       "Data Preprocessing",
       "SpringBoot",
       "ReactJs",

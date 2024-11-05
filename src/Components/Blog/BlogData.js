@@ -65,5 +65,37 @@ export const blogPosts = [
     ),
     images: [require("../Utils/symposium.JPG")],
   },
-  // Add more blog posts here
+  {
+    id: 3,
+    title: "Biomedical Research and Industry Day 2024",
+    excerpt:
+      "Presented research on cancer disparities among African Americans in Louisiana, learning from esteemed speakers on emerging technologies in biomedical fields and career growth as a domain expert.",
+    description: (
+      <>
+        On October 20th, 2024, I attended the Biomedical Research and Industry
+        Day at ULM, an enlightening experience where I learned from
+        distinguished guest speakers, including Dr. Khalid A. El Sayed, Dr.
+        Aaron R. Navratil, Dr. Corie Robinson, Dr. Emily Stevenson, and Dr.
+        Anitaben Tailor. Their discussions covered groundbreaking advancements
+        in biomedical and medical research, highlighting how emerging
+        technologies are shaping the future of healthcare and offering insights
+        into career development as a domain expert. I had the opportunity to
+        present a poster titled "Analyzing Key Factors and Trends in Cancer
+        Disparities Among African Americans in Louisiana." In collaboration with
+        Dr. Sreekumari, our research analyzed cancer data from 2016-2020
+        provided by state cancer profiles, underscoring the critical need to
+        understand the underlying causes of rising cancer cases. We utilized
+        Python libraries like Matplotlib, Seaborn, and Pandas for data analysis
+        and visualization, along with statistical analysis software to conduct
+        correlation analysis on various risk factors and mortality rates. The
+        event was an invaluable experience, not only for deepening my
+        understanding of cancer disparities but also for expanding my knowledge
+        on how to boost one’s career by becoming a domain expert. Interacting
+        with professionals in the field and exchanging ideas was both inspiring
+        and rewarding, reaffirming my commitment to impactful research and
+        continuous learning in the biomedical arena.
+      </>
+    ),
+    images: [require("../Utils/braid.png")],
+  },
 ];

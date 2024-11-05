@@ -5,9 +5,9 @@ const researchProjects = [
   {
     title: "Louisiana Cancer Data Research",
     description:
-      "Collaborating with Dr. Sreekumari on a data analytics project focusing on Louisiana cancer data (2016-2020), provided by LSU Health, New Orleans. Our goal is to uncover significant trends and insights that contribute to a better understanding of cancer in the region. Findings will be presented at the Biomedical Research Conference at LSU Shreveport on November 1, 2024.",
+      "Collaborating with Dr. Sreekumari on a data analytics project focusing on Louisiana cancer data (2016-2020), provided by LSU Health, New Orleans. Our goal is to uncover significant trends and insights that contribute to a better understanding of cancer in the region. Findings were presented at the Biomedical Research Conference at LSU Health Shreveport on November 1, 2024.",
     image: require("../Utils/cancer_data_research.png"),
-    link: "https://www.lsuhs.edu/centers/cardiovascular-diseases-and-sciences/events/braid",
+    link: "https://www.abhishekamgain.com.np/#/blog/3",
     skills: [
       "Data Analytics, Python, Pandas, Visualization, Research Methodologies",
     ],
