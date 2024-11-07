@@ -38,7 +38,7 @@ export const blogPosts = [
   //   images: [require("../Utils/trio_workshop/trio_workshop1.png")],
   // },
   {
-    id: 2,
+    id: 1,
     title:
       "Blazing Trails to Success in Web Development and Project Management",
     excerpt:
@@ -66,7 +66,7 @@ export const blogPosts = [
     images: [require("../Utils/symposium.JPG")],
   },
   {
-    id: 3,
+    id: 2,
     title: "Biomedical Research and Industry Day 2024",
     excerpt:
       "Presented research on cancer disparities among African Americans in Louisiana, learning from esteemed speakers on emerging technologies in biomedical fields and career growth as a domain expert.",

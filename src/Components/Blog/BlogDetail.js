@@ -11,8 +11,8 @@ const BlogDetail = () => {
   if (!blog) {
     return (
       <Container className="text-center my-5">
-        <h2>This page is under maintenance.</h2>
-        <p>Please visit after some hours. We are trying to fix the problem.</p>
+        <h2>Hi, This is Abhishek Amgain 😀. This page is under maintenance.</h2>
+        <p>Please visit after some hours. I am trying to fix the problem.</p>
         <Button variant="primary" href="/#/blog">
           Go Back to Blog
         </Button>
