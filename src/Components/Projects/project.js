@@ -11,12 +11,14 @@ const projects = [
     skills: ["Python, Flask, Numpy, Scikit-Learn, Pandas, Bootstrap"],
   },
   {
-    title: "Stock Price Pattern Prediction",
+    title: "Amazon Feedback Sentiment Analysis",
     description:
-      "With a touch of nostalgia, this project uses advanced LSTM and RNN models to predict Google stock prices, achieving approximately 90% accuracy—just like predicting the future!",
-    image: require("../Utils/google_stock_price_pattern_prediction.png"),
-    link: "https://github.com/amgaina/Google_Stock_Price_Pattern_Prediction",
-    skills: ["Numpy, Tensorflow, LSTM, Scikit-Learn, Matplotlib, RNN"],
+      "An NLP-based project that helps users understand customer sentiments on Amazon Echo products, classifying reviews as positive or negative to guide purchasing decisions.",
+    image: require("../Utils/sentiment.png"),
+    link: "https://github.com/amgaina/Amazon_Sentiment_Analysis",
+    skills: [
+      "Python, Flask, NLTK, XGBoost, MinMaxScaler, CountVectorizer, HTML, CSS",
+    ],
   },
   {
     title: "Movie Recommender System",
@@ -37,14 +39,12 @@ const projects = [
     skills: ["ReactJs, Java, Spring Boot, MySQL, SQL, AWS"],
   },
   {
-    title: "Credit Card Fraud Detection Model",
+    title: "Stock Price Pattern Prediction",
     description:
-      "A cutting-edge model using the Isolation Forest algorithm to protect against fraud, achieving a remarkable 99.7% accuracy—a modern-day hero in finance.",
-    image: require("../Utils/credit_card_fraud_detection.png"),
-    link: "https://github.com/amgaina/Credit-Card-Fraud-Detection",
-    skills: [
-      "Python, Pandas, Isolation Forest, SciKitLearn, Seaborn, Matplotlib",
-    ],
+      "With a touch of nostalgia, this project uses advanced LSTM and RNN models to predict Google stock prices, achieving approximately 90% accuracy—just like predicting the future!",
+    image: require("../Utils/google_stock_price_pattern_prediction.png"),
+    link: "https://github.com/amgaina/Google_Stock_Price_Pattern_Prediction",
+    skills: ["Numpy, Tensorflow, LSTM, Scikit-Learn, Matplotlib, RNN"],
   },
   {
     title: "Handwritten Digit Classification",
