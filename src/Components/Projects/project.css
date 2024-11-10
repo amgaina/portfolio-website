@@ -1,17 +1,16 @@
-/* Projects Page Layout */
 .projects-page {
-  background: #f4f3f1;
-  font-family: 'Roboto', sans-serif;
-  padding: 50px 0;
-  position: relative;
-  }
-  
-  .page-title{
+  text-align: center;
+  color: #4a2c2a;
+  background-color: #f7f2f2;
+  padding: 2rem;
+}
+
+h1.page-title {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: #2c3e50;
     text-transform: uppercase;
+    color: black;
     letter-spacing: 3px;
     background: linear-gradient(90deg, #00c6ff, #0072ff);
     -webkit-background-clip: text;
@@ -19,124 +18,91 @@
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
     padding: 20px 0;
     border-bottom: 5px solid #0072ff;
-  }
-  .projects-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px; 
-  width: 100%; 
-  }
-  
-  .project-card {
-    border: 1px solid #d3c4af;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: calc(100% - 5px);
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    transform: translateY(0);
-    transition: transform 0.3s ease;
-  }
-  
-  .project-card:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .project-info {
-    padding: 20px;
-    text-align: center;
-    overflow-y: auto;
-    flex-grow: 1;
-  }
-  .project-info h2 {
-    font-family: 'Playfair Display', serif !important;
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+}
 
-  
-  .project-info p {
-    font-size: 1rem;
-    color: black;
-    margin-bottom: 10px;
+.project-card {
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 0; /* Remove any padding */
+  background: none; /* Remove background color */
+  border: none;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  display: block; 
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+  filter: brightness(0.85);
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+  padding: 0;
+  margin: 0;
+}
+
+.project-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dialog-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  transform: translateY(-100%);
+  animation: slideDown 0.5s forwards ease-in-out;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
   }
-  
-  .skills-used {
-    margin-bottom: 15px;
-  }
-  
-  .skills-used h3 {
-    font-size: 1.2rem;
-    color: #7d2535;
-    margin-bottom: 10px;
-  }
-  
-  .skills-used ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .skills-used ul li {
-    font-size: 0.9rem;
-    color: white;
-    display: inline-block;
-    margin-right: 5px;
-    padding: 5px 8px;
-    background: #7d2535;
-    border-radius: 8px;
-  }
-  
-  .project-link {
-    text-decoration: underline;
-    font-size: 1rem;
-    color: #0072ff;
-    font-weight: bold;
-    transition: color 0.3s ease;
-  }
-  
-  .project-link:hover {
-    color: #0056b3;
-    cursor: pointer;
-  }
-  
-  .github-link-container {
-    text-align: center;
-    margin-top: 100px;
-  }
-  
-  .github-button {
-    background-color: #0072ff;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-  
-  .github-button:hover {
-    background-color: #555;
-  }
-  
-  @media (max-width: 800px) {
-    .projects-container {
-      grid-template-columns: 1fr; /* One column for tablet and mobile */
-    }
-  }
- 
+}
+
+.close-dialog {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #4a2c2a;
+  cursor: pointer;
+}
+
+.github-link-container {
+  margin-top: 2rem;
+}
+
+.github-button {
+  background-color: #0072ff;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+  background-color: #555;
+}

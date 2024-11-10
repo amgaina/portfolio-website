@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./project.css";
 
 const projects = [
@@ -57,40 +57,65 @@ const projects = [
 ];
 
 const ProjectsPage = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openDialog = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeDialog = () => {
+    setSelectedProject(null);
+  };
+
   return (
-    <div className="projects-page nostalgic-bg" id="project">
-      <h1 className="page-title mb-5">My Projects</h1>
-      <div className="container projects-container">
-        {projects.map((project, index) => (
-          <div key={index} className="project-card">
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
-            <div className="project-info">
-              <h2>{project.title}</h2>
-              <p>{project.description}</p>
-              <div className="skills-used">
-                <h3>Skills Used:</h3>
-                <ul>
-                  {project.skills.map((skill, idx) => (
-                    <li key={idx}>{skill}</li>
-                  ))}
-                </ul>
+    <div className="projects-page" id="project">
+      <h1 className="page-title">My Projects</h1>
+      <div className="container">
+        <div className="row">
+          {projects.map((project, index) => (
+            <div className="col-lg-4 col-md-6 col-sm-12 mb-4" key={index}>
+              <div className="project-card">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image fancy-hover"
+                  onClick={() => openDialog(project)}
+                />
               </div>
-              <a
-                href={project.link}
-                className="project-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Project
-              </a>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
+      {/* Dialog box with animation */}
+      {selectedProject && (
+        <div className="project-dialog">
+          <div className="dialog-content slide-down">
+            <button className="close-dialog" onClick={closeDialog}>
+              ×
+            </button>
+            <h2>{selectedProject.title}</h2>
+            <p>{selectedProject.description}</p>
+            <div className="skills-used">
+              <h3>Skills Used:</h3>
+              <ul>
+                {selectedProject.skills.map((skill, idx) => (
+                  <li key={idx}>{skill}</li>
+                ))}
+              </ul>
+            </div>
+            <a
+              href={selectedProject.link}
+              className="project-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      )}
+
       <div className="github-link-container">
         <a
           href="https://github.com/amgaina"
